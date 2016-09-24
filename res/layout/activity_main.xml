@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gridView1"
+        android:orientation="vertical" >
+
+        <com.joythink.xk.phonetools.view.TitleBarView
+            android:id="@+id/titleBarView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.joythink.xk.phonetools.view.TitleBarView>
+
+        <include layout="@layout/layout_main_center" />
+        
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:cacheColorHint="#0000"
+        android:listSelector="#0000"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>

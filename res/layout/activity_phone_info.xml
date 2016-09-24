@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhoneInfoActivity"
+    android:descendantFocusability="blocksDescendants" >
+
+    <com.joythink.xk.phonetools.view.TitleBarView
+        android:id="@+id/titleBarView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </com.joythink.xk.phonetools.view.TitleBarView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:background="@drawable/selector_bg" >
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/iv_smallbattery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@+id/pb_pb"
+                android:background="@drawable/shape_squ_battery2" />
+
+            <TextView
+                android:id="@+id/tv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_smallbattery"
+                android:text="70%"
+                android:textSize="17sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="350dp"
+                android:layout_height="110dp"
+                android:progress="10"
+                android:progressDrawable="@drawable/progress_style_battery"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

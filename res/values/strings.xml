@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">安卓管家</string>
+    <string name="action_settings">设置</string>
+    <string name="action_reset">重置</string>
+    <string name="action_add">添加</string>
+    <string name="action_check">查询</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_speed_up">SpeedUpActivity</string>
+    <string name="title_activity_app_mgr">AppMgrActivity</string>
+    <string name="title_activity_app_list">AppListActivity</string>
+    <string name="title_activity_phone_info">PhoneInfoActivity</string>
+    <string name="title_activity_tel_menu">TelMenuActivity</string>
+    <string name="title_activity_tel_list">TelListActivity</string>
+    <string name="title_activity_file_mgr">FileMgrActivity</string>
+    <string name="title_activity_file_list">FileListActivity</string>
+    <string name="title_activity_cache_clear">CacheClearActivity</string>
+    <string name="main_rocket">手机加速</string>
+    <string name="main_softmgr">软件管理</string>
+    <string name="main_phonemgr">手机检测</string>
+    <string name="main_telmgr">通讯大全</string>
+    <string name="main_filemgr">文件管理</string>
+    <string name="main_sdclean">清理垃圾</string>
+    <string name="setting_kaijiqidong">开机启动</string>
+    <string name="setting_tongzhitubiao">通知图标</string>
+    <string name="setting_xiaoxituisong">消息推送</string>
+    <string name="setting_bangzhushuoming">帮助说明</string>
+    <string name="setting_yijianfankui">意见反馈</string>
+    <string name="setting_haoyoufenxiang">好友分享</string>
+    <string name="setting_banbengengxin">版本更新</string>
+    <string name="setting_guanyuwomen">关于我们</string>
+    <string name="app_all">所有软件</string>
+    <string name="app_user">用户软件</string>
+    <string name="app_system">系统软件</string>
+    <string name="filetype_others">未分类</string>
+    <string name="filetype_text">文档</string>
+    <string name="filetype_video">视频</string>
+    <string name="filetype_mp3">音频</string>
+    <string name="filetype_img">图像</string>
+    <string name="filetype_zip">压缩包</string>
+    <string name="filetype_program">程序包</string>
+    
+    
+
+</resources>

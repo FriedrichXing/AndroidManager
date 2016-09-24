@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.joythink.xk.phonetools.view.ClearView
+        android:id="@+id/clearView1"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/ib_mainImgButton"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_imgbutton" />
+
+    <RelativeLayout
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="20dp" >
+			<RelativeLayout 
+			    android:id="@+id/rl_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true">
+			    <TextView
+                android:id="@+id/tv_mainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_mainText"
+                android:layout_alignBottom="@+id/tv_mainText"
+                android:layout_toRightOf="@+id/tv_mainText"
+                android:text="%"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+			</RelativeLayout>
+			    
+            
+
+            <Button
+                android:id="@+id/btn_mainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_text"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_mainbutton"
+                android:padding="8dp"
+                android:text="手机加速"
+                android:textColor="#ffffff" />
+
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

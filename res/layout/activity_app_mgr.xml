@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppMgrActivity" >
+
+    <com.joythink.xk.phonetools.view.TitleBarView
+        android:id="@+id/titleBarView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </com.joythink.xk.phonetools.view.TitleBarView>
+
+    <RelativeLayout
+        android:id="@+id/rl_clearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBarView1"
+        android:padding="20dp" >
+
+        <com.joythink.xk.phonetools.view.PieChartView
+            android:id="@+id/pieChartView1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/titleBarView1"
+        android:layout_toRightOf="@+id/rl_clearView"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:drawableLeft="@drawable/shape_squ_blue"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="3dp"
+                android:text="手机内置空间" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:drawableLeft="@drawable/shape_squ_green"
+                android:layout_below="@+id/textView1"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="外置存储空间" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_style"
+        android:layout_height="15dp"
+        android:layout_width="match_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_below="@+id/rl_clearView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rl_clearView"
+        android:text="手机内置空间" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="5dp"
+        android:text="可用：25.00G/30.73G" />
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView4"
+        android:text="外置存储空间" />
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_style"
+        android:layout_height="15dp"
+        android:layout_width="match_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar2"
+        android:layout_below="@+id/progressBar2"
+        android:layout_marginTop="5dp"
+        android:text="可用：0.00G/0.00G" />
+
+     <ListView
+         android:id="@+id/listView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView6"
+         android:layout_marginTop="10dp" >
+
+     </ListView>
+
+</RelativeLayout>

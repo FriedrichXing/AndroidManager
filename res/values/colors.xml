@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_press">#f00</color>
+    <color name="text_normal">#ffff</color>
+    <color name="pb_background">#D9D9D9</color>
+    <color name="pb_progress">#33ccff</color>
+    <color name="color_inside">#0000FF</color>
+    <color name="color_outside">#00FF00</color>
+    <color name="color_piebg">#D9D9D9</color>
+    <color name="color_battery">#EEEEEE</color>
+    <color name="color_power">#99FE9B</color>
+    <color name="pb_battery">#99FE9B</color>
+    <color name="pb_lowbattery">#FE0000</color>
+</resources>

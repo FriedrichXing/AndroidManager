@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FileListActivity" >
+
+    <com.joythink.xk.phonetools.view.TitleBarView
+        android:id="@+id/titleBarView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </com.joythink.xk.phonetools.view.TitleBarView>
+
+    <LinearLayout
+        android:id="@+id/filesInfos"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/titleBarView1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="文件数量:" />
+
+        <TextView
+            android:id="@+id/tv_totalNums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="1600个"
+            android:textColor="#FF8C00"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="占用空间：" />
+
+        <TextView
+            android:id="@+id/tv_totalSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="100.40M"
+            android:textColor="#FF8C00"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/filesInfos" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F9F9F9"
+        android:padding="10dp" >
+
+        <CheckBox
+            android:id="@+id/cb_checkall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/selector_checkbox" />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_btn_clearall"
+            android:padding="10dp"
+            android:text="删除所选文件"
+            android:textColor="#fff" />
+
+        
+    </LinearLayout>
+
+</RelativeLayout>
